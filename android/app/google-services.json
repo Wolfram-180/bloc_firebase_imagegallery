@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "436618917433",
+    "project_id": "w180-bloc-gallery",
+    "storage_bucket": "w180-bloc-gallery.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:436618917433:android:caf88be581161524297fe8",
+        "android_client_info": {
+          "package_name": "com.example.bloc_firebase_gallery"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQC9G4DxKJcL1wp7e17s2wnNKNTmpF8w8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
