@@ -1,4 +1,4 @@
-import 'package:bloc_firebase_gallery/firebase_options.dart';
+import 'package:bloc_firebase_gallery/firebase_setup/firebase_options.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 
@@ -8,15 +8,26 @@ void main() async {
     options: DefaultFirebaseOptions.currentPlatform,
   );
   runApp(
-    MaterialApp(
+    const App(),
+  );
+}
+
+class App extends StatelessWidget {
+  const App({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
       title: 'Test app',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
       home: const HomePage(),
-    ),
-  );
+    );
+  }
 }
 
 class HomePage extends StatelessWidget {
