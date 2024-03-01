@@ -10,7 +10,7 @@ abstract class AppState {
 
   const AppState({
     required this.isLoading,
-    required this.authError,
+    this.authError,
   });
 }
 
@@ -22,7 +22,7 @@ class AppStateLoggedIn extends AppState {
     required this.user,
     required this.images,
     required super.isLoading,
-    required super.authError,
+    super.authError,
   });
 
   @override
@@ -53,7 +53,7 @@ class AppStateLoggedIn extends AppState {
 class AppStateLoggedOut extends AppState {
   const AppStateLoggedOut({
     required super.isLoading,
-    required super.authError,
+    super.authError,
   });
   @override
   String toString() {
@@ -65,7 +65,7 @@ class AppStateLoggedOut extends AppState {
 class AppStateIsInRegistrationView extends AppState {
   const AppStateIsInRegistrationView({
     required super.isLoading,
-    required super.authError,
+    super.authError,
   });
 
   @override
